@@ -5,7 +5,7 @@ I'm Andre Diop, a Full Stack web developer from Atlanta. My passion for web deve
 
 
 <br>
-🌱 I’m currently learning more about React.
+🌱 I’m currently learning more about React and SASS.
 <br>
 👯 I’m looking to collaborate on a projects no matter how big or small. 
 <br>

@@ -1,7 +1,7 @@
 ### Hi there 👋<br/>
 I'm Andre Diop, a Full Stack web developer from Atlanta. My passion for web development lies with the creation of ideas and making them come true with user intuitive interfaces. I take great care in the experience, architecture, and code quality of the things I build.  
 
-🌱 I’m currently learning more about Linux, AWS, CI/CD and DevOps  
+🌱 I’m currently learning more about Java, Cloudformation, CI/CD and AWS Deployments  
 👯 I’m looking to collaborate on projects no matter how big or small.  
 
 

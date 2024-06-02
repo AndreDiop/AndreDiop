@@ -28,3 +28,90 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 - 📫 How to reach me:
 -->
+
+
+a!localVariables(
+  local!showPopup: false,
+  {
+    a!sectionLayout(
+      showWhen: not(local!showPopup),
+      contents: {
+        a!textField(
+          label: "Text",
+        ),
+        a!paragraphField(
+          label: "Paragraph",
+        ),
+        a!buttonArrayLayout(
+          buttons: {
+            a!buttonWidget(
+              label: "Show Popup!",
+              icon: "arrow-right",
+              value: true,
+              saveInto: local!showPopup,
+              style: "PRIMARY"
+            )
+          },
+          align: "CENTER"
+        )
+      },
+    ),
+    a!columnsLayout(
+      showWhen: local!showPopup,
+      columns: {
+        a!columnLayout(),
+        a!columnLayout(
+          contents: {
+            a!cardLayout(
+              marginAbove: "EVEN_MORE",
+              showBorder: false,
+              showShadow: true,
+              contents: {
+                a!sectionLayout(
+                  contents: {
+                    a!richTextDisplayField(
+                      labelPosition: "COLLAPSED",
+                      value: {
+                        a!richTextItem(
+                          text: {
+                            "This is a fake popup window!"
+                          },
+                          size: "MEDIUM_PLUS"
+                        ),
+                        char(10),
+                        char(10),
+                        "And shows some text to the user."
+                      }
+                    )
+                  },
+                  divider: "BELOW"
+                ),
+                a!buttonLayout(
+                  primaryButtons: {
+                    a!buttonWidget(
+                      label: "OK",
+                      icon: "check",
+                      style: "PRIMARY",
+                      value: false,
+                      saveInto: local!showPopup
+                    )
+                  },
+                  secondaryButtons: {
+                    a!buttonWidget(
+                      label: "Cancel",
+                      icon: "times",
+                      style: "NORMAL",
+                      value: false,
+                      saveInto: local!showPopup
+                    )
+                  }
+                )
+              },
+            )
+          }
+        ),
+        a!columnLayout()
+      },
+    )
+  }
+)
